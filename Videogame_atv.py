@@ -17,10 +17,10 @@ v3 = Videogame(data_fab = 2022, marca = 'Nintendo', modelo = '64')
 
 games = [v1, v2, v3]
 
-for game in games:
-    print(f'Marca: {game.marca}; \nModelo: {game.modelo}; \nData de Fabricação: {game.data_fab}; \nNumero de série: {game.num_serie}; \nJogos: {game.jogos[0]}, {game.jogos[1]}; \n----------------\n\n')
+for game in games:            #imprime os atibutos de cada videogame
+    print(f'Marca: {game.marca}; \nModelo: {game.modelo}; \nData de Fabricação: {game.data_fab}; \nNumero de série: {game.num_serie}; \nJogos: {game.jogos[0]}, {game.jogos[1]}; \n----------------\n')
 
-for game in games:
+for game in games:            #imprime os atibutos de cada videogame de maneira simplificada
     for atributo, valor in game.__dict__.items():
         print(f'{atributo}: {valor}')
-    print()
+    print('\n----------------\n')
